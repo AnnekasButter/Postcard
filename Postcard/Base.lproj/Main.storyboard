@@ -91,14 +91,34 @@
                                     <rect key="frame" x="283" y="134" width="80" height="80"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyG-F4-w2i">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="134" width="259" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jyG-F4-w2i"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jyG-F4-w2i"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="9f1-0D-m7Q" id="v5k-tf-QB7"/>
                         <outlet property="enterNameTextField" destination="GRf-uG-z1B" id="QIZ-WX-TdY"/>
                         <outlet property="mailButton" destination="dnG-Px-kPM" id="0fQ-AI-W0p"/>
                         <outlet property="messageLabel" destination="nE0-kh-But" id="XtD-Oh-knW"/>
+                        <outlet property="nameLabel" destination="jyG-F4-w2i" id="pbG-ix-EMr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cW9-HD-mOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
